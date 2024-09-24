@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo List of <%=title%></title>
+  </head>
+  <body class="page">
+    <div class="section">
+      <h1>To do Lists</h1>
+      <p>Lists for this week</p>
+    </div>
+
+    <form class="form" action="/" method="post">
+      <input type="text" name="new_item" placeholder="Enter new Task..." />
+      <button class="btn" type="submit">Add Task</button>
+    </form>
+
+    <div class="main wrapper">
+      <% if(todos.length > 0){ todos.forEach((todo) => {%>
+      <div class="todo">
+        <p><%=todo.new_item%></p>
+      </div>
+      <% }) } else { %>
+      <p>No Items found</p>
+      <%}%>
+    </div>
+  </body>
+</html>

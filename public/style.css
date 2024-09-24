@@ -1,0 +1,30 @@
+.form {
+  /* height: 500px;
+  width: 500px; */
+  padding-top: 100px;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section {
+  display: block;
+}
+input {
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid black;
+}
+input::placeholder {
+  text-align: center;
+}
+.btn {
+  background: red;
+  color: #fff;
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+}
